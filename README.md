@@ -64,12 +64,12 @@
 
 ---
 
-## Добавление своих квестов в [QuestReader](https://github.com/albruevich/Text-Quest-Reader)
+## Добавление своих квестов в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
 
-Чтобы использовать свой квест в QuestReader
+Чтобы использовать свой квест в Text Quest Reader
 1. Нажмите на кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
 2. Нажмите на  кнопку Open folder, откроется папка Quests/YourQuest, скопируйте ее
-3. Откройте проект QuestReader через Unity
+3. Откройте проект Text Quest Reader через Unity
 4. Вставьте папку вашего квеста по адресу Assets/Resources/Quests/
 5. Добавьте название папки вашего квесте в Assets/_Settings/Quest Folders List
 6. Нажмите кнопку Run (Во время запуска в списке квестов должен появится ваш квест)
