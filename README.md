@@ -115,7 +115,8 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 <img src="docs/param_panel_1.webp" width="680">
 
 
-5. Отображение параметров
+### 5. Отображение параметров
+
 Вы можете отображать свои параметры разными способами
 В данном примере при помощи кнопок «-» «+» отрегулированы ранги для отображений в количестве 3. 
 Если Mood будет равен 1 то во время игры будет показано: You are furious.
@@ -128,20 +129,22 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 <img src="docs/param_outlook_1.webp" width="301">
 
+В игре это отобразится так:
 <img src="docs/param_outlook_2.webp" width="180">
 
 Также вы можете в отображении указывать значения других параметров. Например для отображения счета в игре между командами:
 
-<img src="docs/param_outlook_3.webp" width="778">
+<img src="docs/param_outlook_3.webp" width="680">
 
 <img src="docs/param_outlook_4.webp" width="159">
 
 При этом, параметры могут вообще не отображаться никогда, для этого достаточно оставить это поле пустым:
 
-<img src="docs/param_outlook_5.webp" width="849">
+<img src="docs/param_outlook_5.webp" width="680">
 
 
-### 6. Тип параметров. 
+### 6. Тип параметров
+
 Параметры могут быть 3-х типов: Нормальный, Успешный, Проваленный
 
 Нормальный тип параметра не влияет на то, завершится ли квест провалом или успехом. Например параметр Mood у нас нормальный и в редактировании у него нет критических значений. 
