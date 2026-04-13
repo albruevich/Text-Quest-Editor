@@ -322,7 +322,7 @@ If the “Select by formula” checkbox is enabled, the description will be sele
 
 For example:  
 `p1 > 5 ? 1 : 2`  
-If p1 (gold) is greater than 5 — description №1 will be shown, otherwise — №2.
+If p1 (gold) is greater than 5 — description #1 will be shown, otherwise — #2.
 
 <img src="docs/loc_descr_3.webp" width="338">
 
