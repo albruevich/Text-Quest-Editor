@@ -103,7 +103,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 Рекомендуется начать создания квеста из создания нескольких ключевых параметров, например: золото, здоровье, настроение
 
-### 1. Для этого нажмите на кнопку <img src="docs/btn_params.webp" width="30">
+#### 1. Для этого нажмите на кнопку <img src="docs/btn_params.webp" width="30">
 
 ### 2. Нажмите на бокс слева от «Add parametr» <img src="docs/box_add_param.webp" width="164">
 
