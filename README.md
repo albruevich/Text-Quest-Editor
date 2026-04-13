@@ -214,8 +214,8 @@ If the display field is left empty, the parameter will not be shown in the game:
 Parameters can be of three types: **Normal**, **Successful**, **Failed**
 
 - **Normal** — does not affect quest completion  
-- ** Successful** — completes the quest with victory when a critical value is reached  
-- ** Failed** — completes the quest with defeat when a critical value is reached  
+- **Successful** — completes the quest with victory when a critical value is reached  
+- **Failed** — completes the quest with defeat when a critical value is reached  
 
 For example: if the gold parameter reaches 10, the quest ends with victory.
 
