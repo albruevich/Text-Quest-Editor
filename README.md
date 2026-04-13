@@ -2,9 +2,9 @@
 
 # Text Quest Editor
 
-![Unity](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
+![Engine](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
 ![Language](https://img.shields.io/badge/language-C%23-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Format](https://img.shields.io/badge/data-JSON-orange)
 
 **Text Quest Editor** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
 
