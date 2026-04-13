@@ -181,11 +181,12 @@
 
 Вкладка «Quest settings». 
 
-Тут вы можете настроить значения квеста для показа в QuestReader:
-1. Display Name
-2. Start music 
-3. Start image 
-4. Описание квеста 
+Здесь вы можете настроить параметры квеста, которые отображаются в **Text Quest Reader** при его выборе:
+
+1. Display Name  
+2. Start Music  
+3. Start Image  
+4. Описание квеста
 
 <img src="docs/quest_settings.webp" width="680">
 
