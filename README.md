@@ -6,698 +6,495 @@
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
 
-**Text Quest Editor** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
+**Text Quest Editor** allows you to create and use text quests inspired by mechanics of games like "Space Rangers".
 
-Редактор распространяется в виде готовых сборок для платформ Windows, macOS и Linux.
+The editor is distributed as ready-made builds for Windows, macOS and Linux platforms.
 
-Готовые квесты можно:
-- запускать прямо в **Text Quest Editor** для тестирования,
-- либо подключать к проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
+Ready quests can be:
+- launched directly in **Text Quest Editor** for testing,
+- or connected to the project [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 
-**Text Quest Reader** является open-source решением и позволяет:
-- видеть и понимать, как работает квест,
-- использовать его код в собственных проектах,
-- настраивать UI под свои задачи.
+**Text Quest Reader** is an open-source solution and allows you to:
+- see and understand how the quest works,
+- use its code in your own projects,
+- customize the UI for your needs.
 
-Квесты создаются и хранятся в формате JSON, что делает связку **Text Quest Editor** и **Text Quest Reader (open-source)** универсальным решением для использования текстовых квестов в любых проектах.
-
----
-
-## Содержание
-
-- [Быстрый старт](#быстрый-старт)
-- [Создание нового квеста](#создание-нового-квеста)
-- [Загрузка квеста](#загрузка-квеста)
-- [Сохранение квеста](#сохранение-квеста)
-- [Примеры квестов](#примеры-квестов)
-- [Добавление в Text Quest Reader](#добавление-квеста-в-text-quest-reader)
-- [Структура квеста](#структура-квеста)
-- [Основная идея](#основная-идея)
-- [Параметры](#параметры)
-- [Основные настройки квеста](#основные-настройки-квеста)
-- [Режимы](#режимы)
-- [Локации](#редактирование-локаций)
-- [Переходы](#переходы)
-- [Работа с ресурсами](#работа-с-ресурсами)
-- [Игровой режим](#игровой-режим)
-- [Разное](#разное)
-- [Советы](#советы)
+Quests are created and stored in JSON format, which makes the combination of **Text Quest Editor** and **Text Quest Reader (open-source)** a universal solution for using text quests in any projects.
 
 ---
 
+## Contents
 
-## Быстрый старт
-
-1. Создайте новый квест
-2. Добавьте 1–2 параметра (например: золото)
-3. Создайте стартовую локацию
-4. Добавьте ещё одну локацию
-5. Соедините их переходом
-6. Нажмите Play
-
-Готово — у вас есть первый рабочий квест.
-
----
-
-## Создание нового квеста
-
-Чтобы создать новый квест:
-1. Нажмите кнопку <img src="docs/btn_new.webp" width="30">
-2. Введите название квеста и нажмите **Accept**
-3. Название квеста используется как его ID и, в отличие от Display Name, не может быть изменено
-4. Название квеста должно совпадать с названием папки (при создании это происходит автоматически — важно не изменять его вручную)
+- [Quick Start](#quick-start)
+- [Creating a New Quest](#creating-a-new-quest)
+- [Loading a Quest](#loading-a-quest)
+- [Saving a Quest](#saving-a-quest)
+- [Example Quests](#viewing-example-quests)
+- [Adding to Text Quest Reader](#adding-a-quest-to-text-quest-reader)
+- [Quest Structure](#quest-structure)
+- [Core Idea](#core-idea)
+- [Parameters](#parameters)
+- [Quest Settings](#quest-settings)
+- [Modes](#modes)
+- [Locations](#locations)
+- [Transitions](#transitions)
+- [Working with Resources](#working-with-resources)
+- [Game Mode](#game-mode)
+- [Misc](#misc)
+- [Tips](#tips)
 
 ---
 
-## Загрузка квеста
+## Quick Start
 
-1. Нажмите кнопку <img src="docs/btn_load.webp" width="30">
-2. Выберите нужный квест
-3. Нажмите кнопку **Load**
+1. Create a new quest
+2. Add 1–2 parameters (for example: gold)
+3. Create a starting location
+4. Add another location
+5. Connect them with a transition
+6. Press Play
+
+Done — you have your first working quest.
 
 ---
 
-## Сохранение квеста
+## Creating a New Quest
 
-1. Нажмите кнопку <img src="docs/btn_save.webp" width="30">
-2. Нажмите кнопку **Save**
-3. Также можно использовать горячие клавиши:
+To create a new quest:
+1. Click the button <img src="docs/btn_new.webp" width="30">
+2. Enter the quest name and click **Accept**
+3. The quest name is used as its ID and, unlike Display Name, cannot be changed
+4. The quest name must match the folder name (it is done automatically on creation — it is important not to change it manually)
+
+---
+
+## Loading a Quest
+
+1. Click the button <img src="docs/btn_load.webp" width="30">
+2. Select the required quest
+3. Click the **Load** button
+
+---
+
+## Saving a Quest
+
+1. Click the button <img src="docs/btn_save.webp" width="30">
+2. Click the **Save** button
+3. You can also use hotkeys:
    - **Ctrl + S** (Windows)
    - **Cmd + S** (macOS)
 
 ---
 
-## Просмотр примеров квестов
+## Viewing Example Quests
 
-В репозитории доступны [готовые квесты](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
+The repository contains [ready-made quests](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
 
-Чтобы добавить их в редактор:
-1. Нажмите кнопку загрузки квестов <img src="docs/btn_load.webp" width="30">
-2. Нажмите кнопку **Open folder** — откроется папка `Quests`
-3. Поместите скачанные и распакованные квесты в эту папку
-4. Закройте и снова откройте панель загрузки квестов, чтобы обновить список
-
----
-
-## Добавление квеста в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
-
-Чтобы использовать свой квест в **Text Quest Reader**:
-1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
-2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`, скопируйте её
-3. Откройте проект **Text Quest Reader** в Unity
-4. Вставьте папку квеста по пути: `Assets/Resources/Quests/`
-5. Добавьте название папки квеста в `Assets/_Settings/Quest Folders List`
-6. Нажмите кнопку **Run** — квест появится в списке доступных
+To add them to the editor:
+1. Click the load quests button <img src="docs/btn_load.webp" width="30">
+2. Click the **Open folder** button — the `Quests` folder will open
+3. Place downloaded and unpacked quests into this folder
+4. Close and reopen the quest loading panel to refresh the list
 
 ---
 
-## Структура квеста
+## Adding a Quest to [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
 
-Квест представляет собой папку, которая совпадает с названием вашего квеста
-Внутри неё находятся:
-- основной файл quest.json 
-- папка Images
-- папка Sounds
-- папка Musics
+To use your quest in **Text Quest Reader**:
+1. Click the quest save button <img src="docs/btn_save.webp" width="30">
+2. Click the **Open folder** button — the `Quests/YourQuest` folder will open, copy it
+3. Open the **Text Quest Reader** project in Unity
+4. Paste the quest folder into: `Assets/Resources/Quests/`
+5. Add the quest folder name to `Assets/_Settings/Quest Folders List`
+6. Click the **Run** button — the quest will appear in the list of available ones
 
-Эти папки и quest.json создаются автоматически при создании квеста 
+---
 
-После добавления квеста в Text Quest Reader, структура должна получиться такая в Unity:
+## Quest Structure
+
+A quest is a folder that matches the name of your quest.
+
+Inside it there are:
+- main file `quest.json`
+- `Images` folder
+- `Sounds` folder
+- `Musics` folder
+
+All these folders and the `quest.json` file are created automatically when creating a quest.
+
+After adding the quest to Text Quest Reader, the structure in Unity will look like this:
 
 <img src="docs/quest_structure.webp" width="480">
 
 ---
 
-## Основная идея
+## Core Idea
 
-Создание квеста строится на трёх ключевых элементах: параметрах, локациях и переходах.
+Creating a quest is based on three key elements: parameters, locations and transitions.
 
-1. Создание и редактирование параметров
-2. Создание и редактирование локаций
-3. Создание и редактирование переходов между локациями
-4. Влияние локаций и переходов на параметры
-5. Условия отображения переходов в зависимости от параметров
-
----
-
-[↑ К содержанию](#содержание)
+1. Creating and editing parameters
+2. Creating and editing locations
+3. Creating and editing transitions between locations
+4. Influence of locations and transitions on parameters
+5. Conditions for displaying transitions depending on parameters
 
 ---
 
-## Параметры
-
-Рекомендуется начинать создание квеста с настройки нескольких ключевых параметров, например: золото, здоровье, настроение.
-
-#### 1. Создание параметра
-
-1. Нажмите кнопку <img src="docs/btn_params.webp" width="30">
-2. Нажмите на поле слева от «Add parameter» <img src="docs/box_add_param.webp" width="164">
-3. Укажите **Working title** (рабочее название, не отображается в игре)
+[↑ Back to Contents](#contents)
 
 ---
 
-#### 2. Значения параметра
+## Parameters
 
-У каждого параметра есть:
-- минимальное значение,
-- максимальное значение,
-- стартовое значение.
+It is recommended to start creating a quest by setting up several key parameters, for example: gold, health, mood.
 
-Задайте их и нажмите кнопку **Apply**.
+#### 1. Creating a Parameter
+
+1. Click the button <img src="docs/btn_params.webp" width="30">
+2. Click the field to the left of “Add parameter” <img src="docs/box_add_param.webp" width="164">
+3. Specify **Working title** (working name, not displayed in the game)
+
+---
+
+#### 2. Parameter Values
+
+Each parameter has:
+- minimum value,
+- maximum value,
+- starting value.
+
+Set them and click the **Apply** button.
 
 <img src="docs/param_panel_1.webp" width="680">
 
 ---
 
-#### 3. Отображение параметра
+#### 3. Parameter Display
 
-Параметры можно отображать разными способами.
+Parameters can be displayed in different ways.
 
-В данном примере настроены ранги отображения (3 уровня):
-- если Mood = 1 → будет показано: *You are furious*
-- если Mood = 2 → будет показано: *Normal mood*
+In this example, rank display (3 levels) is configured:
+- if Mood = 1 → will be shown: *You are furious*
+- if Mood = 2 → will be shown: *Normal mood*
 
 <img src="docs/param_panel_2.webp" width="680">
 
 ---
 
-Если вы хотите отображать числовое значение параметра, используйте `<>` — во время игры оно будет заменено на текущее значение:
+If you want to display a numeric value of a parameter, use `<>` — during the game it will be replaced with the current value:
 
 <img src="docs/param_outlook_1.webp" width="301">
 
-В игре это выглядит так:
+In the game it looks like this:
 
 <img src="docs/param_outlook_2.webp" width="180">
 
 ---
 
-Также можно использовать значения других параметров.  
-Например, для отображения счёта между командами:
+You can also use values of other parameters.
+
+For example, to display the score between teams:
 
 <img src="docs/param_outlook_3.webp" width="680">
 
-В игре это выглядит так:
+In the game it looks like this:
 
 <img src="docs/param_outlook_4.webp" width="159">
 
 ---
 
-Если поле отображения оставить пустым, параметр не будет показываться в игре:
+If the display field is left empty, the parameter will not be shown in the game:
 
 <img src="docs/param_outlook_5.webp" width="680">
 
 ---
 
-#### 4. Тип параметра
+#### 4. Parameter Type
 
-Параметры могут быть трёх типов: **Нормальный**, **Успешный**, **Провальный**
+Parameters can be of three types: **Normal**, **Success**, **Fail**
 
-- **Нормальный** — не влияет на завершение квеста  
-- **Успешный** — завершает квест победой при достижении критического значения  
-- **Провальный** — завершает квест поражением при достижении критического значения  
+- **Normal** — does not affect quest completion  
+- **Success** — completes the quest with victory when a critical value is reached  
+- **Fail** — completes the quest with defeat when a critical value is reached  
 
-Например: если параметр золота достигает 10, квест завершается победой.
+For example: if the gold parameter reaches 10, the quest ends with victory.
 
 <img src="docs/param_types.webp" width="680">
 
-*(Для критических значений также можно задать изображения и звуки — об этом будет рассказано позже.)*
+*(For critical values you can also set images and sounds — this will be described later.)*
 
 ---
 
-#### 5. Деактивация параметра
+#### 5. Disable Parameter
 
-Вы можете отключить параметр, сняв галочку в боксе слева от него.
+You can disable a parameter by unchecking the checkbox to the left of it.
 
-В этом случае параметр не будет использоваться в квесте.
+In this case, the parameter will not be used in the quest.
 
 <img src="docs/param_disable.webp" width="159">
 
 ---
 
-[↑ К содержанию](#содержание)
+[↑ Back to Contents](#contents)
 
 ---
 
-## Основные настройки квеста
+## Quest Settings
 
-Чтобы открыть настройки квеста:
-1. Нажмите кнопку <img src="docs/btn_params.webp" width="30">
-2. Перейдите во вкладку **Quest settings**
+To open quest settings:
+1. Click the button <img src="docs/btn_params.webp" width="30">
+2. Go to the **Quest settings** tab
 
-Здесь настраиваются параметры квеста, отображаемые в **Text Quest Reader** при его выборе:
+Here you configure quest parameters that are displayed in **Text Quest Reader** when selecting it:
 
 1. Display Name  
 2. Start Music  
 3. Start Image  
-4. Описание квеста
+4. Quest Description  
 
 <img src="docs/quest_settings.webp" width="680">
 
 ---
 
-## Режимы
+## Modes
 
-В редакторе есть три основных режима: режим локаций, режим переходов и режим перемещения.
+The editor has three main modes: location mode, transition mode and movement mode.
 
 <img src="docs/modes.webp" width="177">
 
-1. **Режим локаций**  
-   При клике ЛКМ по рабочей области (сетке) открывается панель создания новой локации.
+1. **Location Mode**  
+   Left click on the workspace (grid) opens the panel for creating a new location.
 
-2. **Режим переходов**  
-   Кликните ЛКМ по первой локации, затем по второй. После этого откроется панель создания перехода.  
-   *Примечание: можно создать переход, который ведёт в ту же локацию, из которой он начинается.*
+2. **Transition Mode**  
+   Left click the first location, then the second. After that, the transition creation panel will open.  
+   *Note: you can create a transition that leads to the same location it starts from.*
 
-3. **Режим перемещения**  
-   - Клик ЛКМ по локации позволяет переместить её на свободную клетку.  
-   - Клик ЛКМ по переходу позволяет изменить его положение между локациями.  
-     При этом важно, где был сделан первый клик — на начале (хвосте) или конце (голове) перехода.
-
-
----
-
-### Правый клик
-
-1. ПКМ по локации или переходу открывает панель их редактирования.
-2. В режиме переходов, если уже выбрана начальная локация, ПКМ отменяет создание перехода. 
+3. **Movement Mode**  
+   - Left click on a location allows you to move it to a free cell.  
+   - Left click on a transition allows you to change its position between locations.  
+     It is important where the first click was made — at the start (tail) or at the end (head) of the transition.
 
 ---
 
-### Отмена действий
+### Right Click
 
-Если вы допустили ошибку, используйте эти кнопки для отмены последнего действия (Undo) или его повторного выполнения (Redo).
+1. Right click on a location or transition opens its editing panel.
+2. In transition mode, if the starting location is already selected, right click cancels transition creation.
+
+---
+
+### Undo Actions
+
+If you made a mistake, use these buttons to undo the last action (Undo) or redo it (Redo).
 
 <img src="docs/undo.webp" width="64">
 
 ---
 
-## Локации
+## Locations
 
-Чтобы открыть панель редактирования локации:
-- нажмите ПКМ по существующей локации,  
-- или ЛКМ по пустой клетке в режиме локаций.
+To open the location editing panel:
+- right click on an existing location,
+- or left click on an empty cell in location mode.
 
-Откроется панель редактирования или создания локации.
+The location editing or creation panel will open.
 
 <img src="docs/edit_location.webp" width="680">
 
-#### 1. Описания локаций
+#### 1. Location Descriptions
 
-В основном текстовом поле вы можете редактировать описание локации.
+In the main text field you can edit the location description.
 
-В одной локации может быть несколько описаний.  
-Чтобы добавить новое описание, нажмите кнопку «Add».  
-Для выбора описания используйте выпадающий список:
+A location can have multiple descriptions.  
+To add a new description, click the “Add” button.  
+To select a description, use the dropdown:
 
 <img src="docs/loc_descr_1.webp" width="164">
 
-Описания можно удалять.
+Descriptions can be deleted.
 
 <img src="docs/loc_descr_2.webp" width="444">
 
-Если включён чек-бокс «Select in order», описания будут показываться по очереди.
+If the “Select in order” checkbox is enabled, descriptions will be shown one by one.
 
-Если включён чек-бокс «Select by formula», описание будет выбираться на основе формулы.
+If the “Select by formula” checkbox is enabled, the description will be selected based on a formula.
 
-Например:  
-`p1 > 5 ? 1 : 2`  
-Если p1 (золото) больше 5 — будет показано описание №1, иначе — №2.
+Example:  
+`p1 > 5 ? 1 : 2`
+
+If p1 (gold) is greater than 5 — description №1 will be shown, otherwise — №2.
 
 <img src="docs/loc_descr_3.webp" width="338">
 
-Другой пример:  
+Another example:  
 `p2 + 1`
 
-Формула возвращает номер описания.
+The formula returns the description number.
 
-- Если у игрока есть пистолет (p2 = 1), результат будет 2 — показывается описание №2.  
-- Если пистолета нет (p2 = 0), результат будет 1 — показывается описание №1.
+- If the player has a gun (p2 = 1), the result will be 2 — description №2 is shown.  
+- If there is no gun (p2 = 0), the result will be 1 — description №1 is shown.
 
+**Descriptions can contain parameters and formulas.**
 
-**Описания могут содержать параметры и формулы.**
+Example:  
+`You are so tired today, your health is somewhere around {p3}`  
 
-Например:  
-`Вы сегодня так устали, Ваше здоровье где-то на {p3}`  
-В игре будет показано:  
-`Вы сегодня так устали, Ваше здоровье где-то на 7`
+In the game it will be:  
+`You are so tired today, your health is somewhere around 7`
 
-Или:  
-`Он отдал вам ровно половину своих денег: {p1 / 2}`
+Or:  
+`He gave you exactly half of his money: {p1 / 2}`
 
+---
 
-#### 2. Типы локаций
+#### 2. Location Types
 
-Локации могут иметь разные типы: **Нейтральная, Стартовая, Победная, Провальная, Пустая**.
+Locations can have different types: **Neutral, Start, Victory, Fail, Empty**
 
 <img src="docs/loc_types.webp" width="173">
 
-**Нейтральная** — не оказывает влияния на ход игры сама по себе.
+**Neutral** — does not affect gameplay by itself  
 
-**Стартовая** — с неё начинается квест. В квесте может быть только одна стартовая локация.
+**Start** — the quest begins from it. There can be only one start location in a quest  
 
-**Победная** — при попадании в эту локацию квест завершается победой.
+**Victory** — entering this location ends the quest with victory  
 
-**Провальная** — при попадании в эту локацию квест завершается поражением.
+**Fail** — entering this location ends the quest with defeat  
 
-**Пустая** — если локация имеет этот тип, её описание не отображается. Вместо него показывается описание перехода, который привёл к этой локации.
+**Empty** — if a location has this type, its description is not shown. Instead, the description of the transition that led to this location is shown  
 
-#### 3. Проходимость
+---
 
-Вы можете ограничить количество посещений локации.
+#### 3. Visit Limit
 
-По умолчанию локация имеет неограниченную проходимость — игрок может посещать её любое количество раз.
+You can limit the number of visits to a location.
+
+By default, a location has unlimited visits.
 
 <img src="docs/loc_pass_1.webp" width="184">
 
-Чтобы задать ограничение:
-- снимите чек-бокс «Неограниченная проходимость»,  
-- укажите максимальное количество посещений.
+To set a limit:
+- uncheck “Unlimited visits”  
+- set the maximum number of visits  
 
-После достижения лимита локация больше не будет доступна (переход к ней не будет отображаться).
-
-Например: игрок может прийти к другу 3 раза, а на 4-й раз локация не появится (друг уехал в отпуск).
-
-<img src="docs/loc_pass_2.webp" width="199">
-
-Этот механизм также удобно использовать для создания одноразовых локаций.
-
-#### 4. Влияние локации на параметры
-
-При попадании в локацию она может изменять параметры игрока.
-
-Для этого выберите нужный параметр:
-
-<img src="docs/loc_infl_to_param.webp" width="680">
+After reaching the limit, the location becomes unavailable.
 
 ---
 
-**Действия**
+#### 4. Parameter Influence
 
-Локация может:
-- **показать параметр** — он будет отображаться в игре,
-- **скрыть параметр**,  
-- **ничего не делать** (значение по умолчанию).
+When entering a location, it can change player parameters.
 
----
+Modes:
+- Units  
+- Value  
+- Percent  
+- Expression  
 
-**Влияние на значения параметров**
-
-Доступны 4 режима: **Units**, **Value**, **Percent**, **Expression**
-
-**Units**  
-Изменяет значение параметра на указанное число (прибавляет или вычитает).  
-Пример: было 2 золота, указано +3 → станет 5 (с учётом минимального и максимального значения).
-
-**Value**  
-Устанавливает точное значение параметра.  
-Пример: было 2 золота, установлено 0 → у игрока больше нет золота.
-
-**Percent**  
-Изменяет значение параметра на указанный процент.  
-Пример: было 10 золота, указано -50% → станет 5.
-
-**Expression**  
-Устанавливает значение параметра по формуле.
-
-Пример:
-
-p1 + (p11 == 0 ? -2 : 0)
-
-- `p1` — кислород  
-- `p11` — пробоина (0 — не устранена)
-
-Если пробоина не устранена, кислород уменьшается на 2
-
-Другой пример:
-
-(p2 + p5) / 2
-
-- `p1` — золото  
-- `p2` — часы работы  
-- `p5` — премия  
-
-В этом случае золото становится средним значением между часами работы и премией.
+Random supported:
+`rnd(1, 3)`
 
 ---
 
-**Рандом**
-
-Формулы поддерживают случайные значения.
-
-Пример:
-
-p9 - rnd(1, 3)
-
-- `p9` — здоровье монстра  
-
-При выстреле здоровье уменьшается на случайное число от 1 до 3.
+[↑ Back to Contents](#contents)
 
 ---
 
-[↑ К содержанию](#содержание)
+## Transitions
+
+Transitions are similar to locations.
 
 ---
 
-## Переходы
+### Key Differences
 
-Переходы во многом похожи на локации: они также могут иметь проходимость, показывать или скрывать параметры и влиять на их значения.  
-Эти механики работают аналогично, поэтому здесь они не рассматриваются повторно.
-
-<img src="docs/edit_trans.webp" width="680">
+- Only one description  
+- Button text is required  
 
 ---
 
-**Основные отличия**
+### Conditions
 
-- У перехода всегда только одно описание.
-- Обязателен текст кнопки перехода.
+1. Logical condition  
+2. Range  
+3. Accepts values  
+4. Divisibility  
 
-<img src="docs/trans_btn_text.webp" width="288">
-
-В игре это выглядит так:
-
-<img src="docs/trans_btn_view.webp" width="215">
+All conditions must be met.
 
 ---
 
-**Условия отображения перехода**
+### Display Order
 
-Будет ли показан переход, зависит от нескольких условий:
-
-### 1. Logical condition
-
-<img src="docs/trans_logical_condition.webp" width="277">
-
-Задаёт формулу, при которой переход отображается.  
-Например: переход будет показан только если золота больше 3.
+Lower value → higher in the list.
 
 ---
 
-### 2. Диапазон
+### Priority
 
-<img src="docs/trans_range.webp" width="239">
-
-Переход отображается, если значение параметра находится в заданном диапазоне.  
-Например: от 1 до 4 золота.
+Higher value → higher chance.
 
 ---
 
-### 3. Принимает / не принимает значения
+### Always Show
 
-<img src="docs/trans_accepts.webp" width="241">
-
-Переход отображается, если параметр принимает (или не принимает) указанные значения.  
-Например: p1 (золото) равно 1, или (яблоки - 2), или случайному числу от 3 до 10.
+Transitions can be shown disabled (grey).
 
 ---
 
-### 4. Кратность
-
-<img src="docs/trans_div.webp" width="239">
-
-Переход отображается, если значение параметра кратно (или не кратно) заданным значениям.
+[↑ Back to Contents](#contents)
 
 ---
 
-### 5. Важно
+## Working with Resources
 
-Переход будет показан **только при выполнении всех условий одновременно**:
-- Logical condition  
-- Диапазон  
-- Принимает / не принимает значения  
-- Кратность  
+Tags:
 
-Рекомендуется начинать с одного условия, чтобы не усложнять логику и не запутаться при тестировании квеста.
+- Images: `<im ... im>`  
+- Music: `<mu ... mu>`  
+- Sounds: `<so ... so>`
 
 ---
 
-### 6. Порядок отображения
+Place files in quest folder.
 
-Если переходов несколько, они могут отображаться в разном порядке.
-
-<img src="docs/trans_order_1.webp" width="274">
-
-Порядок задаётся через параметр **Display order**:
-- чем меньше значение, тем выше кнопка в списке,
-- если значения совпадают — порядок определяется случайно.
-
-<img src="docs/trans_order_2.webp" width="127">
+Formats:
+- Images: `.png`, `.jpg`, `.jpeg`  
+- Sounds: `.mp3`, `.wav`, `.ogg`
 
 ---
 
-### 7. Приоритет
-
-В квесте могут быть переходы с одинаковым текстом кнопки. Такие переходы называются **спорными** и выделяются красным цветом.
-
-Например: два перехода «Run from the monster to the technical sector»  
-— один ведёт к спасению, другой к поражению.
-
-<img src="docs/trans_prior_1.webp" width="551">
-
-Вероятность выбора определяется приоритетом (весом):
-- чем выше значение, тем выше шанс показа перехода.
-
-<img src="docs/trans_prior_2.webp" width="219">
-
-Например:
-- шанс спасения = 3  
-- шанс гибели = 7  
-→ 30% и 70%
-
-Также существуют вероятностные переходы (не спорные).  
-Для них используется значение от 0 до 1:
-- 0.5 = 50% шанс появления.
+Refresh resources manually or restart the editor.
 
 ---
 
-### 8. Серые (неактивные) переходы / Всегда показывать
+## Game Mode
 
-Если условия перехода не выполнены, он может не отображаться.  
-Однако можно включить опцию «Всегда показывать», чтобы показывать такие переходы как неактивные.
+Click Play.
 
-<img src="docs/trans_always_show_1.webp" width="390">
-
-Например: путь в Медблок или аварийный отсек закрыт (условия не выполнены), но переход всё равно отображается серым.
-
-Это позволяет:
-- давать игроку подсказки,
-- создавать ощущение выбора,
-- подталкивать к поиску решения.
-
-<img src="docs/trans_always_show_2.webp" width="137">
+You can:
+- complete the quest  
+- set parameters  
+- rewind  
 
 ---
 
-[↑ К содержанию](#содержание)
+## Misc
+
+- Hints  
+- Grid  
+- Mouse help  
 
 ---
 
-## Работа с ресурсами
+## Tips
 
-В локациях, переходах и критических параметрах можно использовать ресурсы (изображения, музыку и звуки) через специальные теги.
+Do not start with a complex quest.
 
-**Теги ресурсов:**
+Start with 5–10 locations.
 
-- Изображения:  
-  `<im your_beautiful_picture im>`
-
-- Музыка:  
-  `<mu your_music mu>`
-
-- Звуки:  
-  `<so your_sound so>`
+Then scale.
 
 ---
 
-После добавления тегов необходимо поместить соответствующие файлы в папку квеста.
-
-Чтобы открыть папку квеста:
-- нажмите кнопку сохранения квеста,
-- затем выберите **Open folder**.
-
-Откроется папка с нужной структурой:
-
-<img src="docs/res_folders.webp" width="358">
-
----
-
-**Форматы файлов:**
-
-- Изображения: `.png`, `.jpg`, `.jpeg`  
-- Звуки: `.mp3`, `.wav`, `.ogg`
-
----
-
-**Примеры использования:**
-
-<img src="docs/res_tags_1.webp" width="680">
-
-<img src="docs/res_tags_2.webp" width="680">
-
----
-
-**Обновление ресурсов**
-
-Редактор использует кеширование ресурсов.  
-После изменения файлов в папках необходимо обновить их вручную.
-
-Для этого нажмите соответствующие кнопки обновления:
-
-<img src="docs/res_cache.webp" width="225">
-
-Либо перезапустите редактор — это также применит все изменения.
-
-
----
-
-## Игровой режим
-
-Для запуска и отладки квеста нажмите кнопку:
-
-<img src="docs/btn_play.webp" width="36">
-
-В игровом режиме вы можете:
-- пройти квест от начала до конца,
-- временно задать параметры для тестирования,
-- отмотать прохождение назад.
-
----
-
-## Разное
-
-Вы можете включить или отключить подсказки — текст в верхней части экрана, который напоминает о текущем режиме.
-
-Если подсказки включены:
-- при наведении на локации и переходы отображаются тултипы с информацией.
-
-Вы также можете включить или отключить отображение сетки:
-
-<img src="docs/grid_n_hints.webp" width="60">
-
-Краткую справку по управлению мышью можно открыть по кнопке:
-
-<img src="docs/btn_info.webp" width="32">
-
-Переходы имеют визуальные различия:
-- хвост (from) — синий и широкий,
-- голова (to) — белая и узкая.
-
-<img src="docs/trans_view.webp" width="360">
-
----
-
-## Советы
-
-Не начинайте сразу со сложного квеста.
-
-Рекомендуется сначала создать небольшой квест (5–10 локаций), чтобы:
-- освоить основные возможности редактора,
-- понять логику работы системы,
-- избежать типичных ошибок в будущем.
-
-После этого будет значительно проще переходить к более сложным сценариям.
-
-
----
-
-[↑ К содержанию](#содержание)
+[↑ Back to Contents](#contents)
