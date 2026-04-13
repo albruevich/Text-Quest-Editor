@@ -91,7 +91,7 @@ Editor + Reader образуют единую систему:
 
 ## Структура квеста
 
-<img src="docs/quest_structure.webp" width="273">
+<img src="docs/quest_structure.webp" width="400">
 
 Внутри:
 - quest.json  
