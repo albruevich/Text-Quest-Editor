@@ -137,6 +137,8 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 <img src="docs/param_outlook_3.webp" width="680">
 
+В игре это отобразится так:
+
 <img src="docs/param_outlook_4.webp" width="159">
 
 При этом, параметры могут вообще не отображаться никогда, для этого достаточно оставить это поле пустым:
