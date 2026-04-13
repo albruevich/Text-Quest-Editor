@@ -6,18 +6,18 @@
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
 
-**Text Quest Editor** allows you to create and use text quests inspired by mechanics of games like "Space Rangers".
+**Text Quest Editor** allows you to create and use text quests inspired by the mechanics of games like "Space Rangers".
 
-The editor is distributed as ready-made builds for Windows, macOS and Linux platforms.
+The editor is distributed as ready-made builds for Windows, macOS, and Linux platforms.
 
-Ready quests can be:
+Ready-made quests can be:
 - launched directly in **Text Quest Editor** for testing,
 - or connected to the project [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 
 **Text Quest Reader** is an open-source solution and allows you to:
 - see and understand how the quest works,
 - use its code in your own projects,
-- customize the UI for your needs.
+- customize the UI for your own tasks.
 
 Quests are created and stored in JSON format, which makes the combination of **Text Quest Editor** and **Text Quest Reader (open-source)** a universal solution for using text quests in any projects.
 
@@ -45,12 +45,13 @@ Quests are created and stored in JSON format, which makes the combination of **T
 
 ---
 
+
 ## Quick Start
 
 1. Create a new quest
 2. Add 1–2 parameters (for example: gold)
 3. Create a starting location
-4. Add another location
+4. Add one more location
 5. Connect them with a transition
 6. Press Play
 
@@ -64,7 +65,7 @@ To create a new quest:
 1. Click the button <img src="docs/btn_new.webp" width="30">
 2. Enter the quest name and click **Accept**
 3. The quest name is used as its ID and, unlike Display Name, cannot be changed
-4. The quest name must match the folder name (it is done automatically on creation — it is important not to change it manually)
+4. The quest name must match the folder name (this happens automatically when creating it — it is important not to change it manually)
 
 ---
 
@@ -91,9 +92,9 @@ To create a new quest:
 The repository contains [ready-made quests](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
 
 To add them to the editor:
-1. Click the load quests button <img src="docs/btn_load.webp" width="30">
+1. Click the quest loading button <img src="docs/btn_load.webp" width="30">
 2. Click the **Open folder** button — the `Quests` folder will open
-3. Place downloaded and unpacked quests into this folder
+3. Place the downloaded and unpacked quests into this folder
 4. Close and reopen the quest loading panel to refresh the list
 
 ---
@@ -112,17 +113,17 @@ To use your quest in **Text Quest Reader**:
 
 ## Quest Structure
 
-A quest is a folder that matches the name of your quest.
+A quest is a folder whose name matches the name of your quest.
 
 Inside it there are:
-- main file `quest.json`
-- `Images` folder
-- `Sounds` folder
-- `Musics` folder
+- the main file `quest.json`
+- the `Images` folder
+- the `Sounds` folder
+- the `Musics` folder
 
 All these folders and the `quest.json` file are created automatically when creating a quest.
 
-After adding the quest to Text Quest Reader, the structure in Unity will look like this:
+After adding the quest to Text Quest Reader, the structure in Unity should look like this:
 
 <img src="docs/quest_structure.webp" width="480">
 
@@ -130,12 +131,12 @@ After adding the quest to Text Quest Reader, the structure in Unity will look li
 
 ## Core Idea
 
-Creating a quest is based on three key elements: parameters, locations and transitions.
+Creating a quest is built on three key elements: parameters, locations, and transitions.
 
 1. Creating and editing parameters
 2. Creating and editing locations
 3. Creating and editing transitions between locations
-4. Influence of locations and transitions on parameters
+4. The influence of locations and transitions on parameters
 5. Conditions for displaying transitions depending on parameters
 
 ---
@@ -152,16 +153,16 @@ It is recommended to start creating a quest by setting up several key parameters
 
 1. Click the button <img src="docs/btn_params.webp" width="30">
 2. Click the field to the left of “Add parameter” <img src="docs/box_add_param.webp" width="164">
-3. Specify **Working title** (working name, not displayed in the game)
+3. Specify **Working title** (a working name, not displayed in the game)
 
 ---
 
 #### 2. Parameter Values
 
 Each parameter has:
-- minimum value,
-- maximum value,
-- starting value.
+- a minimum value,
+- a maximum value,
+- a starting value.
 
 Set them and click the **Apply** button.
 
@@ -173,15 +174,15 @@ Set them and click the **Apply** button.
 
 Parameters can be displayed in different ways.
 
-In this example, rank display (3 levels) is configured:
-- if Mood = 1 → will be shown: *You are furious*
-- if Mood = 2 → will be shown: *Normal mood*
+In this example, display ranks are configured (3 levels):
+- if Mood = 1 → this will be shown: *You are furious*
+- if Mood = 2 → this will be shown: *Normal mood*
 
 <img src="docs/param_panel_2.webp" width="680">
 
 ---
 
-If you want to display a numeric value of a parameter, use `<>` — during the game it will be replaced with the current value:
+If you want to display the numeric value of a parameter, use `<>` — during the game it will be replaced with the current value:
 
 <img src="docs/param_outlook_1.webp" width="301">
 
@@ -191,8 +192,7 @@ In the game it looks like this:
 
 ---
 
-You can also use values of other parameters.
-
+You can also use values of other parameters.  
 For example, to display the score between teams:
 
 <img src="docs/param_outlook_3.webp" width="680">
@@ -221,13 +221,13 @@ For example: if the gold parameter reaches 10, the quest ends with victory.
 
 <img src="docs/param_types.webp" width="680">
 
-*(For critical values you can also set images and sounds — this will be described later.)*
+*(For critical values you can also set images and sounds — this will be explained later.)*
 
 ---
 
-#### 5. Disable Parameter
+#### 5. Disabling a Parameter
 
-You can disable a parameter by unchecking the checkbox to the left of it.
+You can disable a parameter by unchecking the box to the left of it.
 
 In this case, the parameter will not be used in the quest.
 
@@ -241,16 +241,16 @@ In this case, the parameter will not be used in the quest.
 
 ## Quest Settings
 
-To open quest settings:
+To open the quest settings:
 1. Click the button <img src="docs/btn_params.webp" width="30">
 2. Go to the **Quest settings** tab
 
-Here you configure quest parameters that are displayed in **Text Quest Reader** when selecting it:
+Here you configure the quest parameters that are displayed in **Text Quest Reader** when selecting it:
 
 1. Display Name  
 2. Start Music  
 3. Start Image  
-4. Quest Description  
+4. Quest Description
 
 <img src="docs/quest_settings.webp" width="680">
 
@@ -258,34 +258,35 @@ Here you configure quest parameters that are displayed in **Text Quest Reader** 
 
 ## Modes
 
-The editor has three main modes: location mode, transition mode and movement mode.
+The editor has three main modes: location mode, transition mode, and movement mode.
 
 <img src="docs/modes.webp" width="177">
 
 1. **Location Mode**  
-   Left click on the workspace (grid) opens the panel for creating a new location.
+   When you left-click on the working area (grid), the panel for creating a new location opens.
 
 2. **Transition Mode**  
-   Left click the first location, then the second. After that, the transition creation panel will open.  
-   *Note: you can create a transition that leads to the same location it starts from.*
+   Left-click the first location, then the second one. After that, the transition creation panel will open.  
+   *Note: you can create a transition that leads to the same location from which it starts.*
 
 3. **Movement Mode**  
-   - Left click on a location allows you to move it to a free cell.  
-   - Left click on a transition allows you to change its position between locations.  
-     It is important where the first click was made — at the start (tail) or at the end (head) of the transition.
+   - Left-click on a location allows you to move it to a free cell.  
+   - Left-click on a transition allows you to change its position between locations.  
+     In this case, it is important where the first click was made — at the beginning (tail) or at the end (head) of the transition.
+
 
 ---
 
 ### Right Click
 
-1. Right click on a location or transition opens its editing panel.
-2. In transition mode, if the starting location is already selected, right click cancels transition creation.
+1. Right-click on a location or transition opens their editing panel.
+2. In transition mode, if the starting location has already been selected, right-click cancels transition creation.
 
 ---
 
-### Undo Actions
+### Undoing Actions
 
-If you made a mistake, use these buttons to undo the last action (Undo) or redo it (Redo).
+If you made a mistake, use these buttons to undo the last action (Undo) or to perform it again (Redo).
 
 <img src="docs/undo.webp" width="64">
 
@@ -294,20 +295,20 @@ If you made a mistake, use these buttons to undo the last action (Undo) or redo 
 ## Locations
 
 To open the location editing panel:
-- right click on an existing location,
-- or left click on an empty cell in location mode.
+- right-click on an existing location,  
+- or left-click on an empty cell in location mode.
 
-The location editing or creation panel will open.
+The editing or creation panel for a location will open.
 
 <img src="docs/edit_location.webp" width="680">
 
 #### 1. Location Descriptions
 
-In the main text field you can edit the location description.
+In the main text field, you can edit the location description.
 
-A location can have multiple descriptions.  
+One location can have several descriptions.  
 To add a new description, click the “Add” button.  
-To select a description, use the dropdown:
+To select a description, use the dropdown list:
 
 <img src="docs/loc_descr_1.webp" width="164">
 
@@ -315,13 +316,12 @@ Descriptions can be deleted.
 
 <img src="docs/loc_descr_2.webp" width="444">
 
-If the “Select in order” checkbox is enabled, descriptions will be shown one by one.
+If the “Select in order” checkbox is enabled, descriptions will be shown one after another.
 
 If the “Select by formula” checkbox is enabled, the description will be selected based on a formula.
 
-Example:  
-`p1 > 5 ? 1 : 2`
-
+For example:  
+`p1 > 5 ? 1 : 2`  
 If p1 (gold) is greater than 5 — description №1 will be shown, otherwise — №2.
 
 <img src="docs/loc_descr_3.webp" width="338">
@@ -331,68 +331,127 @@ Another example:
 
 The formula returns the description number.
 
-- If the player has a gun (p2 = 1), the result will be 2 — description №2 is shown.  
-- If there is no gun (p2 = 0), the result will be 1 — description №1 is shown.
+- If the player has a pistol (p2 = 1), the result will be 2 — description №2 will be shown.  
+- If there is no pistol (p2 = 0), the result will be 1 — description №1 will be shown.
+
 
 **Descriptions can contain parameters and formulas.**
 
-Example:  
+For example:  
 `You are so tired today, your health is somewhere around {p3}`  
-
-In the game it will be:  
+In the game it will be shown as:  
 `You are so tired today, your health is somewhere around 7`
 
 Or:  
 `He gave you exactly half of his money: {p1 / 2}`
 
----
 
 #### 2. Location Types
 
-Locations can have different types: **Neutral, Start, Victory, Fail, Empty**
+Locations can have different types: **Neutral, Start, Victory, Fail, Empty**.
 
 <img src="docs/loc_types.webp" width="173">
 
-**Neutral** — does not affect gameplay by itself  
+**Neutral** — does not affect the course of the game by itself.
 
-**Start** — the quest begins from it. There can be only one start location in a quest  
+**Start** — the quest starts from this location. There can only be one start location in a quest.
 
-**Victory** — entering this location ends the quest with victory  
+**Victory** — when entering this location, the quest ends with victory.
 
-**Fail** — entering this location ends the quest with defeat  
+**Fail** — when entering this location, the quest ends with defeat.
 
-**Empty** — if a location has this type, its description is not shown. Instead, the description of the transition that led to this location is shown  
-
----
+**Empty** — if a location has this type, its description is not displayed. Instead, the description of the transition that led to this location is shown.
 
 #### 3. Visit Limit
 
 You can limit the number of visits to a location.
 
-By default, a location has unlimited visits.
+By default, a location has unlimited visits — the player can visit it any number of times.
 
 <img src="docs/loc_pass_1.webp" width="184">
 
 To set a limit:
-- uncheck “Unlimited visits”  
-- set the maximum number of visits  
+- uncheck the “Unlimited visits” checkbox,  
+- specify the maximum number of visits.
 
-After reaching the limit, the location becomes unavailable.
+After reaching the limit, the location will no longer be available (the transition to it will not be shown).
+
+For example: the player can visit a friend 3 times, and on the 4th time the location will no longer appear (the friend went on vacation).
+
+<img src="docs/loc_pass_2.webp" width="199">
+
+This mechanism is also convenient for creating one-time locations.
+
+#### 4. Influence of a Location on Parameters
+
+When entering a location, it can change the player's parameters.
+
+To do this, select the required parameter:
+
+<img src="docs/loc_infl_to_param.webp" width="680">
 
 ---
 
-#### 4. Parameter Influence
+**Actions**
 
-When entering a location, it can change player parameters.
+A location can:
+- **show a parameter** — it will be displayed in the game,
+- **hide a parameter**,  
+- **do nothing** (default value).
 
-Modes:
-- Units  
-- Value  
-- Percent  
-- Expression  
+---
 
-Random supported:
-`rnd(1, 3)`
+**Influence on Parameter Values**
+
+4 modes are available: **Units**, **Value**, **Percent**, **Expression**
+
+**Units**  
+Changes the value of a parameter by the specified number (adds or subtracts).  
+Example: there were 2 gold, +3 is specified → it will become 5 (taking into account the minimum and maximum value).
+
+**Value**  
+Sets the exact value of a parameter.  
+Example: there were 2 gold, 0 is set → the player no longer has gold.
+
+**Percent**  
+Changes the value of a parameter by the specified percentage.  
+Example: there were 10 gold, -50% is specified → it will become 5.
+
+**Expression**  
+Sets the value of a parameter using a formula.
+
+Example:
+
+p1 + (p11 == 0 ? -2 : 0)
+
+- `p1` — oxygen  
+- `p11` — breach (0 — not fixed)
+
+If the breach is not fixed, oxygen decreases by 2.
+
+Another example:
+
+(p2 + p5) / 2
+
+- `p1` — gold  
+- `p2` — working hours  
+- `p5` — bonus  
+
+In this case, gold becomes the average value between working hours and the bonus.
+
+---
+
+**Random**
+
+Formulas support random values.
+
+Example:
+
+p9 - rnd(1, 3)
+
+- `p9` — monster health  
+
+When shooting, the health is reduced by a random number from 1 to 3.
 
 ---
 
@@ -402,43 +461,131 @@ Random supported:
 
 ## Transitions
 
-Transitions are similar to locations.
+Transitions are very similar to locations: they can also have visit limits, show or hide parameters, and affect their values.  
+These mechanisms work in the same way, so they are not repeated here.
+
+<img src="docs/edit_trans.webp" width="680">
 
 ---
 
-### Key Differences
+**Main Differences**
 
-- Only one description  
-- Button text is required  
+- A transition always has only one description.
+- Transition button text is required.
 
----
+<img src="docs/trans_btn_text.webp" width="288">
 
-### Conditions
+In the game it looks like this:
 
-1. Logical condition  
-2. Range  
-3. Accepts values  
-4. Divisibility  
-
-All conditions must be met.
+<img src="docs/trans_btn_view.webp" width="215">
 
 ---
 
-### Display Order
+**Conditions for Displaying a Transition**
 
-Lower value → higher in the list.
+Whether a transition will be shown depends on several conditions:
+
+### 1. Logical condition
+
+<img src="docs/trans_logical_condition.webp" width="277">
+
+Sets a formula under which the transition is shown.  
+For example: the transition will be shown only if there is more than 3 gold.
 
 ---
 
-### Priority
+### 2. Range
 
-Higher value → higher chance.
+<img src="docs/trans_range.webp" width="239">
+
+The transition is shown if the parameter value is within the specified range.  
+For example: from 1 to 4 gold.
 
 ---
 
-### Always Show
+### 3. Accepts / does not accept values
 
-Transitions can be shown disabled (grey).
+<img src="docs/trans_accepts.webp" width="241">
+
+The transition is shown if the parameter accepts (or does not accept) the specified values.  
+For example: p1 (gold) equals 1, or (apples - 2), or a random number from 3 to 10.
+
+---
+
+### 4. Divisibility
+
+<img src="docs/trans_div.webp" width="239">
+
+The transition is shown if the parameter value is divisible (or not divisible) by the specified values.
+
+---
+
+### 5. Important
+
+The transition will be shown **only if all conditions are met at the same time**:
+- Logical condition  
+- Range  
+- Accepts / does not accept values  
+- Divisibility  
+
+It is recommended to start with one condition so as not to complicate the logic and not get confused while testing the quest.
+
+---
+
+### 6. Display Order
+
+If there are several transitions, they can be shown in different order.
+
+<img src="docs/trans_order_1.webp" width="274">
+
+The order is set through the **Display order** parameter:
+- the smaller the value, the higher the button is in the list,
+- if the values are the same — the order is determined randomly.
+
+<img src="docs/trans_order_2.webp" width="127">
+
+---
+
+### 7. Priority
+
+A quest can contain transitions with the same button text. Such transitions are called **conflicting** and are highlighted in red.
+
+For example: two transitions “Run from the monster to the technical sector”  
+— one leads to rescue, the other to defeat.
+
+<img src="docs/trans_prior_1.webp" width="551">
+
+The selection probability is determined by priority (weight):
+- the higher the value, the higher the chance of displaying that transition.
+
+<img src="docs/trans_prior_2.webp" width="219">
+
+For example:
+- chance of rescue = 3  
+- chance of death = 7  
+→ 30% and 70%
+
+There are also probabilistic transitions (not conflicting).  
+For them, a value from 0 to 1 is used:
+- 0.5 = 50% chance of appearing.
+
+---
+
+### 8. Grey (inactive) transitions / Always show
+
+If the transition conditions are not met, it may not be displayed.  
+However, you can enable the “Always show” option to display such transitions as inactive.
+
+<img src="docs/trans_always_show_1.webp" width="390">
+
+For example: the path to the Medbay or the emergency section is closed (conditions are not met), but the transition is still shown in grey.
+
+This allows you to:
+- give the player hints,
+- create a sense of choice,
+- encourage them to look for a solution.
+
+<img src="docs/trans_always_show_2.webp" width="137">
 
 ---
 
@@ -448,52 +595,109 @@ Transitions can be shown disabled (grey).
 
 ## Working with Resources
 
-Tags:
+In locations, transitions, and critical parameters, you can use resources (images, music, and sounds) through special tags.
 
-- Images: `<im ... im>`  
-- Music: `<mu ... mu>`  
-- Sounds: `<so ... so>`
+**Resource tags:**
+
+- Images:  
+  `<im your_beautiful_picture im>`
+
+- Music:  
+  `<mu your_music mu>`
+
+- Sounds:  
+  `<so your_sound so>`
 
 ---
 
-Place files in quest folder.
+After adding the tags, you need to place the corresponding files into the quest folder.
 
-Formats:
+To open the quest folder:
+- click the quest save button,
+- then select **Open folder**.
+
+A folder with the required structure will open:
+
+<img src="docs/res_folders.webp" width="358">
+
+---
+
+**File formats:**
+
 - Images: `.png`, `.jpg`, `.jpeg`  
 - Sounds: `.mp3`, `.wav`, `.ogg`
 
 ---
 
-Refresh resources manually or restart the editor.
+**Usage Examples:**
+
+<img src="docs/res_tags_1.webp" width="680">
+
+<img src="docs/res_tags_2.webp" width="680">
+
+---
+
+**Refreshing Resources**
+
+The editor uses resource caching.  
+After changing files in the folders, you need to refresh them manually.
+
+To do this, click the corresponding refresh buttons:
+
+<img src="docs/res_cache.webp" width="225">
+
+Or restart the editor — this will also apply all changes.
+
 
 ---
 
 ## Game Mode
 
-Click Play.
+To launch and debug the quest, click the button:
 
-You can:
-- complete the quest  
-- set parameters  
-- rewind  
+<img src="docs/btn_play.webp" width="36">
+
+In game mode, you can:
+- complete the quest from beginning to end,
+- temporarily set parameters for testing,
+- rewind the playthrough back.
 
 ---
 
 ## Misc
 
-- Hints  
-- Grid  
-- Mouse help  
+You can enable or disable hints — the text at the top of the screen that reminds you of the current mode.
+
+If hints are enabled:
+- when hovering over locations and transitions, tooltips with information are displayed.
+
+You can also enable or disable the grid display:
+
+<img src="docs/grid_n_hints.webp" width="60">
+
+You can open a short mouse control reference using the button:
+
+<img src="docs/btn_info.webp" width="32">
+
+Transitions have visual differences:
+- tail (from) — blue and wide,
+- head (to) — white and narrow.
+
+<img src="docs/trans_view.webp" width="360">
 
 ---
 
 ## Tips
 
-Do not start with a complex quest.
+Do not start with a complex quest right away.
 
-Start with 5–10 locations.
+It is recommended to first create a small quest (5–10 locations) in order to:
+- learn the editor’s basic capabilities,
+- understand the system logic,
+- avoid typical mistakes in the future.
 
-Then scale.
+After that, it will be much easier to move on to more complex scenarios.
+
 
 ---
 
