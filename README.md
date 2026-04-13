@@ -589,7 +589,7 @@ p9 - rnd(1, 3)
 
 Для запуска и отладки квеста нажмите кнопку:
 
-<img src="docs/btn_play.webp" width="54">
+<img src="docs/btn_play.webp" width="36">
 
 В игровом режиме вы можете:
 - пройти квест от начала до конца,
@@ -607,17 +607,17 @@ p9 - rnd(1, 3)
 
 Вы также можете включить или отключить отображение сетки:
 
-<img src="docs/grid_n_hints.webp" width="37">
+<img src="docs/grid_n_hints.webp" width="60">
 
 Краткую справку по управлению мышью можно открыть по кнопке:
 
-<img src="docs/btn_info.webp" width="26">
+<img src="docs/btn_info.webp" width="32">
 
 Переходы имеют визуальные различия:
 - хвост (from) — синий и широкий,
 - голова (to) — белая и узкая.
 
-<img src="docs/trans_view.webp" width="172">
+<img src="docs/trans_view.webp" width="360">
 
 ---
 
