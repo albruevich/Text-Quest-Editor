@@ -118,7 +118,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 5. Отображение параметров
 Вы можете отображать свои параметры разными способами
 В данном примере при помощи кнопок «-» «+» отрегулированы ранги для отображений в количестве 3. 
-Если Mood будет равен 1 то во время игры будет показано: You are furious
+Если Mood будет равен 1 то во время игры будет показано: You are furious.
 Если Mood будет 2, то будет показано Normal mood
 
 <img src="docs/param_panel_2.webp" width="890">
