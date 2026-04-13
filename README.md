@@ -170,17 +170,17 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 ## Основные настройки квеста
 
 Вы можете настроить свой квест нажав на кнопку
-<img src="docs/btn_params.webp" width="42">
-Вкладка «Quest settings». 
-Тут вы можете настроить:
-### 1. Display Name (в QuestReader)
-### 2. Start music (при выборе в QuestReader)
-### 3. Start image (превью в QuestReader)
-### 4. Описание квеста  (в QuestReader)
+<img src="docs/btn_params.webp" width="42">.
 
+Вкладка «Quest settings». 
+
+Тут вы можете настроить значения квеста для показа в QuestReader:
+1. Display Name
+2. Start music 
+3. Start image 
+4. Описание квеста 
 
 <img src="docs/quest_settings.webp" width="893">
-
 
 
 ---
