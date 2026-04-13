@@ -83,7 +83,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 После добавления квеста в QuestReader, структура должна получиться такая в Unity:
 
-<img src="docs/quest_structure.webp" width="400">
+<img src="docs/quest_structure.webp" width="480">
 
 
 ---
@@ -103,10 +103,11 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 Рекомендуется начать создания квеста из создания нескольких ключевых параметров, например: золото, здоровье, настроение
 
-1. Для этого нажмите на кнопку <img src="docs/btn_params.webp" width="30">
-2. Нажмите на бокс слева от «Add parametr» <img src="docs/box_add_param.webp" width="164">
-3. Дайте ему Working title (это рабочее название, не для отображения)
+### 1. Для этого нажмите на кнопку <img src="docs/btn_params.webp" width="30">
 
+### 2. Нажмите на бокс слева от «Add parametr» <img src="docs/box_add_param.webp" width="164">
+
+### 3. Дайте ему Working title (это рабочее название, не для отображения)
 
 ### 4. Значения параметров
 
