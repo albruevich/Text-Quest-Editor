@@ -53,8 +53,7 @@
 
 ## Просмотр примеров квестов
 
-В репозитории есть готовые квесты
-https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
+В репозитории есть [готовые квесты](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
 
 Чтобы их добавить в редактор нужно:
 1. Нажать на кнопку загрузки квестов <img src="docs/btn_load.webp" width="30">
