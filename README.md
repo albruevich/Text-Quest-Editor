@@ -170,7 +170,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 ## Основные настройки квеста
 
 Вы можете настроить свой квест нажав на кнопку
-<img src="docs/btn_params.webp" width="42">.
+<img src="docs/btn_params.webp" width="30">
 
 Вкладка «Quest settings». 
 
