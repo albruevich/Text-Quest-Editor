@@ -331,8 +331,8 @@ Another example:
 
 The formula returns the description number.
 
-- If the player has a pistol (p2 = 1), the result will be 2 — description №2 will be shown.  
-- If there is no pistol (p2 = 0), the result will be 1 — description №1 will be shown.
+- If the player has a pistol (p2 = 1), the result will be 2 — description #2 will be shown.  
+- If there is no pistol (p2 = 0), the result will be 1 — description #1 will be shown.
 
 
 **Descriptions can contain parameters and formulas.**
