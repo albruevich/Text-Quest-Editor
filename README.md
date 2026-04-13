@@ -64,7 +64,7 @@
 
 ---
 
-## Добавление своих квестов в QuestReader
+## Добавление своих квестов в [QuestReader](https://github.com/albruevich/Text-Quest-Reader)
 
 Чтобы использовать свой квест в QuestReader
 1. Нажмите на кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
