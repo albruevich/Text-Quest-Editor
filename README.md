@@ -112,7 +112,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 
 У каждого квеста есть минимальное, максимальное, и стартовое значение. Укажите их и нажмите на кнопку Apply. 
 
-<img src="docs/param_panel_1.webp" width="600">
+<img src="docs/param_panel_1.webp" width="680">
 
 
 5. Отображение параметров
@@ -121,7 +121,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 Если Mood будет равен 1 то во время игры будет показано: You are furious.
 Если Mood будет 2, то будет показано Normal mood
 
-<img src="docs/param_panel_2.webp" width="890">
+<img src="docs/param_panel_2.webp" width="680">
 
 
 Если же вы хотите показывать значение параметра, то на месте ‘<>’ во время игры отобразится его значение:
