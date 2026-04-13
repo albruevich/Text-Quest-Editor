@@ -180,7 +180,8 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 3. Start image 
 4. Описание квеста 
 
-<img src="docs/quest_settings.webp" width="893">
+<img src="docs/quest_settings.webp" width="680">
+
 
 
 ---
