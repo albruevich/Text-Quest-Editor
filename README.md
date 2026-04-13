@@ -130,6 +130,7 @@ https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests
 <img src="docs/param_outlook_1.webp" width="301">
 
 В игре это отобразится так:
+
 <img src="docs/param_outlook_2.webp" width="180">
 
 Также вы можете в отображении указывать значения других параметров. Например для отображения счета в игре между командами:
