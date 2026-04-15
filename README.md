@@ -251,6 +251,7 @@ Here you configure the quest parameters that are displayed in **Text Quest Reade
 2. Start Music  
 3. Start Image  
 4. Quest Description
+5. Order in list — defines the position of the quest in the quest list. The smaller the value, the higher the quest is displayed.e.
 
 <img src="docs/quest_settings.webp" width="680">
 

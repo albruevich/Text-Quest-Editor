@@ -250,6 +250,7 @@
 2. Start Music  
 3. Start Image  
 4. Опис квесту
+5. Order in list — визначає позицію квесту в списку квестів. Чим менше значення, тим вище відображається квест.
 
 <img src="docs/quest_settings.webp" width="680">
 
