@@ -87,7 +87,7 @@
 
 ---
 
-## Просмотр примеров квестов
+## Примеры квестов
 
 В репозитории доступны [готовые квесты](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
 
