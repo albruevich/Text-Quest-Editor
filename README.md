@@ -125,7 +125,7 @@ All these folders and the `quest.json` file are created automatically when creat
 
 After adding the quest to Text Quest Reader, the structure in Unity should look like this:
 
-<img src="docs/quest_structure.webp" width="480">
+<img src="docs/quest_structure.webp" width="280">
 
 ---
 

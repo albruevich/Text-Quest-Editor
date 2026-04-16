@@ -124,7 +124,7 @@
 
 После добавления квеста в Text Quest Reader, структура должна получиться такая в Unity:
 
-<img src="docs/quest_structure.webp" width="480">
+<img src="docs/quest_structure.webp" width="280">
 
 ---
 
