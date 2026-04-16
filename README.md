@@ -8,7 +8,7 @@
 
 **Text Quest Editor** allows you to create and use text quests inspired by the mechanics of games like "Space Rangers".
 
-The editor is distributed as ready-made builds for Windows, macOS, and Linux platforms.
+The editor is distributed as ready-made builds for Windows and macOS platforms.
 
 Ready-made quests can be:
 - launched directly in **Text Quest Editor** for testing,
