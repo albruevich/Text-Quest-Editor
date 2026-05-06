@@ -64,8 +64,6 @@
 Чтобы создать новый квест:
 1. Нажмите кнопку <img src="docs/btn_new.webp" width="30">
 2. Введите название квеста и нажмите **Accept**
-3. Название квеста используется как его ID и, в отличие от Display Name, не может быть изменено
-4. Название квеста должно совпадать с названием папки (при создании это происходит автоматически — важно не изменять его вручную)
 
 ---
 
@@ -150,15 +148,14 @@
 
 ---
 
-## Добавление квеста в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
+## Локальное добавление квеста в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
 
 Чтобы использовать свой квест в **Text Quest Reader**:
 1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
 2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`, скопируйте её
 3. Откройте проект **Text Quest Reader** в Unity
-4. Вставьте папку квеста по пути: `Assets/Resources/Quests/`
-5. Добавьте название папки квеста в `Assets/_Settings/Quest Folders List`
-6. Нажмите кнопку **Run** — квест появится в списке доступных
+4. Вставьте папку квеста по пути: `Assets/StreamingAssets/Quests/`
+5. Нажмите кнопку **Run** — квест появится в списке доступных
 
 ---
 
