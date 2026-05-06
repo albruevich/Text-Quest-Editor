@@ -15,7 +15,7 @@
 - подключать к Unity проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 - публиковать на сервере и просматривать удалённые квесты в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 
-**Text Quest Reader** является open-source решением и позволяет:
+**Text Quest Reader**, в отличие от **Text Quest Editor**, является open-source решением и позволяет:
 - видеть и понимать, как работает квест,
 - использовать его код в собственных проектах,
 - настраивать UI под свои задачи.
