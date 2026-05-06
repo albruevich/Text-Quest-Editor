@@ -12,7 +12,7 @@
 
 Готовые квесты можно:
 - запускать прямо в **Text Quest Editor** для тестирования,
-- либо подключать к проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
+- либо подключать к Unity проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 - публиковать на сервере и просматривать удалённые квесты в **Text Quest Reader**.
 
 **Text Quest Reader** является open-source решением и позволяет:
