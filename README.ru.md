@@ -168,15 +168,29 @@
 
 ## Добавление квеста в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader)
 
-Вы можете использовать свой квест в Unity-проекте [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader):
+Квесты можно использовать:
+- в Unity-проекте [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader),
+- либо в готовом приложении **Text Quest Reader** для Windows и macOS.
+
+Для локального добавления квеста:
 
 1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
 2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`
 3. Скопируйте папку квеста
-4. Откройте проект [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) в Unity
-5. Вставьте папку квеста по пути:
+
+### В Unity-проект
+
+1. Откройте проект [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) в Unity
+2. Вставьте папку квеста по пути:
    `Assets/StreamingAssets/Quests/`
-6. Нажмите кнопку **Run** — квест появится в списке доступных
+3. Нажмите кнопку **Run** — квест появится в списке доступных
+
+### В готовое приложение [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader/releases)
+
+1. Запустите приложение **Text Quest Reader**
+2. Нажмите кнопку **Add Quests**
+3. Скопируйте папку квеста в открывшуюся папку
+4. Перезапустите приложение или обновите список квестов
 
 ---
 
