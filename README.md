@@ -31,6 +31,7 @@ Quests are created and stored in JSON format, which makes the combination of ðŸ›
 ## Contents
 
 - [Quick start](#quick-start)
+- [Ready Builds](#ready-builds)
 - [Creating a new quest](#creating-a-new-quest)
 - [Loading a quest](#loading-a-quest)
 - [Local and remote quests](#local-and-remote-quests)
