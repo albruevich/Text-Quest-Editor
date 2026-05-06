@@ -90,9 +90,9 @@
 
 Если сервер недоступен, вкладка **Remote** будет отключена.
 
-<img src="docs/load_local.webp" width="420">
+<img src="docs/load_local.webp" width="300">
 
-<img src="docs/load_remote.webp" width="420">
+<img src="docs/load_remote.webp" width="300">
 
 Квест можно загрузить двумя способами:
 - выбрать квест и нажать **Load**,
@@ -115,9 +115,9 @@
 1. Нажмите кнопку **Auth**
 2. Зарегистрируйтесь или войдите в аккаунт
 
-<img src="docs/auth_register.webp" width="220">
+<img src="docs/auth_register.webp" width="150">
 
-<img src="docs/auth_logged.webp" width="220">
+<img src="docs/auth_logged.webp" width="150">
 
 После входа становятся доступны:
 - публикация квестов,
