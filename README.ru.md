@@ -10,17 +10,21 @@
 
 Редактор распространяется в виде готовых сборок для платформ Windows и macOS.
 
+Проект состоит из двух частей:
+- **Text Quest Editor** — инструмент для создания и тестирования квестов,
+- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source Unity runtime для запуска и интеграции квестов в собственные проекты.
+
 Готовые квесты можно:
 - запускать прямо в **Text Quest Editor** для тестирования,
-- подключать к Unity проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
-- публиковать на сервере и просматривать удалённые квесты в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
+- подключать к Unity-проекту **Text Quest Reader**,
+- публиковать на сервере и просматривать удалённые квесты в **Text Quest Reader**.
 
-**Text Quest Reader**, в отличие от **Text Quest Editor**, является open-source решением и позволяет:
+**Text Quest Reader** позволяет:
 - видеть и понимать, как работает квест,
 - использовать его код в собственных проектах,
 - настраивать UI под свои задачи.
 
-Квесты создаются и хранятся в формате JSON, что делает связку **Text Quest Editor** и **Text Quest Reader (open-source)** универсальным решением для использования текстовых квестов в любых проектах.
+Квесты создаются и хранятся в формате JSON, что делает связку **Text Quest Editor** и **Text Quest Reader** универсальным решением для использования текстовых квестов в любых проектах.
 
 ---
 
