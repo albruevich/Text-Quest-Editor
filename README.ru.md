@@ -122,12 +122,12 @@
 
 <img src="docs/auth_register.webp" width="120">
 
-<img src="docs/auth_logged.webp" width="120">
-
 После входа становятся доступны:
 - публикация квестов,
 - обновление удалённых квестов,
 - управление своими remote-квестами.
+
+<img src="docs/auth_logged.webp" width="120">
 
 ---
 
