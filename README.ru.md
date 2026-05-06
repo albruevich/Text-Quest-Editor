@@ -14,7 +14,7 @@
 - **Text Quest Editor** — инструмент для создания и тестирования квестов,
 - [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source Unity runtime для запуска и интеграции квестов в собственные проекты.
 
-Готовые квесты можно:
+Квесты можно:
 - запускать прямо в **Text Quest Editor** для тестирования,
 - подключать к Unity-проекту **Text Quest Reader**,
 - публиковать квесты на сервере, после чего они станут доступны в **Text Quest Reader**.
