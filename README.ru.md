@@ -207,7 +207,7 @@
 - папка `Sounds`
 - папка `Musics`
 
-Эти папки и quest.json создаются автоматически при создании квеста 
+Эти папки и quest.json создаются автоматически при создании квеста.  
 
 После добавления квеста в Unity-проект [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) структура будет выглядеть так:
 
