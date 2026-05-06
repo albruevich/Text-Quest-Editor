@@ -65,6 +65,42 @@ Done — you have your first working quest.
 
 ---
 
+## Ready Builds
+
+You can download them here:  
+👉 [Text Quest Editor Releases](https://github.com/albruevich/Text-Quest-Editor/releases)
+
+### How to Launch
+
+1. Download the archive for your platform  
+2. Extract it  
+3. Windows: run the `.exe` file  
+4. macOS: open the `.dmg` and move the application to Applications
+
+---
+
+## macOS Security Warning
+
+If macOS blocks the application with a message like:
+
+> “App cannot be opened because it is from an unidentified developer”
+
+Do the following:
+
+1. Open:
+   `System Settings → Privacy & Security`
+
+2. Scroll down to the security section
+
+3. Press:
+   **Open Anyway**
+
+4. Confirm launching the application
+
+After the first launch, the application will open normally.
+
+---
+
 ## Creating a new quest
 
 To create a new quest:
