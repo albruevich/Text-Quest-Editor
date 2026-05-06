@@ -115,9 +115,9 @@
 1. Нажмите кнопку **Auth**
 2. Зарегистрируйтесь или войдите в аккаунт
 
-<img src="docs/auth_register.webp" width="150">
+<img src="docs/auth_register.webp" width="120">
 
-<img src="docs/auth_logged.webp" width="150">
+<img src="docs/auth_logged.webp" width="120">
 
 После входа становятся доступны:
 - публикация квестов,
