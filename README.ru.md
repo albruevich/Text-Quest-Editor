@@ -6,12 +6,12 @@
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
 
-**`Text Quest Editor`** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
+🛠**Text Quest Editor** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
 
 Редактор распространяется в виде готовых сборок для платформ Windows и macOS.
 
 Проект состоит из двух частей:
-- **`Text Quest Editor`** — инструмент для создания и тестирования квестов,
+- 🛠**Text Quest Editor** — инструмент для создания и тестирования квестов,
 - [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source Unity runtime для запуска и интеграции квестов в собственные проекты.
 
 Квесты можно:
