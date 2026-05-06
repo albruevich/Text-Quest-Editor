@@ -99,9 +99,20 @@
 
 Этот ID используется для удалённого обновления квеста.
 
+<table>
+<tr>
+<td>
+
 <img src="docs/load_local.webp" width="250">
 
+</td>
+<td>
+
 <img src="docs/load_remote.webp" width="250">
+
+</td>
+</tr>
+</table>
 
 ---
 
