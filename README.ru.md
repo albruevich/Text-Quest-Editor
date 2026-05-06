@@ -185,7 +185,7 @@
    `Assets/StreamingAssets/Quests/`
 3. Нажмите кнопку **Run** — квест появится в списке доступных
 
-### В готовое приложение [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader/releases)
+### В готовое приложение [**Text Quest Reader APP**](https://github.com/albruevich/Text-Quest-Reader/releases)
 
 1. Запустите приложение **Text Quest Reader**
 2. Нажмите кнопку **Add Quests**
