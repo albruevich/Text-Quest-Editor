@@ -170,7 +170,7 @@
 
 Квесты можно использовать:
 - в Unity-проекте [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader),
-- либо в готовом приложении **Text Quest Reader** для Windows и macOS.
+- либо в готовом приложении [**Text Quest Reader APP**](https://github.com/albruevich/Text-Quest-Reader/releases) для Windows и macOS.
 
 Для локального добавления квеста:
 
