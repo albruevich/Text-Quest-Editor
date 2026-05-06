@@ -150,12 +150,15 @@
 
 ## Локальное добавление квеста в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
 
-Чтобы использовать свой квест в **Text Quest Reader**:
+Чтобы использовать свой квест локально в **Text Quest Reader**:
+
 1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
-2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`, скопируйте её
-3. Откройте проект **Text Quest Reader** в Unity
-4. Вставьте папку квеста по пути: `Assets/StreamingAssets/Quests/`
-5. Нажмите кнопку **Run** — квест появится в списке доступных
+2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`
+3. Скопируйте папку квеста
+4. Откройте проект **Text Quest Reader** в Unity
+5. Вставьте папку квеста по пути:
+   `Assets/StreamingAssets/Quests/`
+6. Нажмите кнопку **Run** — квест появится в списке доступных
 
 ---
 
