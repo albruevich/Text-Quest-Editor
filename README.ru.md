@@ -90,9 +90,9 @@
 
 Если сервер недоступен, вкладка **Remote** будет отключена.
 
-<img src="docs/load_local.webp" width="300">
+<img src="docs/load_local.webp" width="250">
 
-<img src="docs/load_remote.webp" width="300">
+<img src="docs/load_remote.webp" width="250">
 
 Квест можно загрузить двумя способами:
 - выбрать квест и нажать **Load**,
