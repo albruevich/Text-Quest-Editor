@@ -156,7 +156,7 @@
 
 ## Примеры квестов
 
-В репозитории доступны [готовые квесты](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests)
+В репозитории доступны примеры [квестов](https://github.com/albruevich/QuestEditor_Builds/tree/main/Quests) для локального использования
 
 Чтобы добавить их в редактор:
 1. Нажмите кнопку загрузки квестов <img src="docs/btn_load.webp" width="30">
