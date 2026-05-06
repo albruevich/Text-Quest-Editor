@@ -1,30 +1,30 @@
 [English](README.md) | [Українська](README.uk.md) | [Русский](README.ru.md)
 
-# Text Quest Editor
+# 🛠 **Text Quest Editor**
 
 ![Engine](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
 
-🛠**Text Quest Editor** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
+🛠 **Text Quest Editor** позволяет создавать и использовать текстовые квесты, вдохновлённые механиками игр типа «Космические рейнджеры».
 
 Редактор распространяется в виде готовых сборок для платформ Windows и macOS.
 
 Проект состоит из двух частей:
-- 🛠**Text Quest Editor** — инструмент для создания и тестирования квестов,
+- 🛠 **Text Quest Editor** — инструмент для создания и тестирования квестов,
 - [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source Unity runtime для запуска и интеграции квестов в собственные проекты.
 
 Квесты можно:
-- запускать прямо в **Text Quest Editor** для тестирования,
-- подключать к Unity-проекту **Text Quest Reader**,
-- публиковать на сервере, после чего они станут доступны в **Text Quest Reader**.
+- запускать прямо в 🛠 **Text Quest Editor** для тестирования,
+- подключать к Unity-проекту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader),
+- публиковать на сервере, после чего они станут доступны в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
 
-**Text Quest Reader** позволяет:
+[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) позволяет:
 - видеть и понимать, как работает квест,
 - использовать его код в собственных проектах,
 - настраивать UI под свои задачи.
 
-Квесты создаются и хранятся в формате JSON, что делает связку **Text Quest Editor** и **Text Quest Reader** универсальным решением для использования текстовых квестов в любых проектах.
+Квесты создаются и хранятся в формате JSON, что делает связку 🛠 **Text Quest Editor** и [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) универсальным решением для использования текстовых квестов в любых проектах.
 
 ---
 
@@ -35,7 +35,7 @@
 - [Загрузка квеста](#загрузка-квеста)
 - [Сохранение квеста](#сохранение-квеста)
 - [Примеры квестов](#примеры-квестов)
-- [Добавление в Text Quest Reader](#добавление-квеста-в-text-quest-reader)
+- [Добавление квеста в Reader](#добавление-квеста-в-text-quest-reader)
 - [Структура квеста](#структура-квеста)
 - [Основная идея](#основная-идея)
 - [Параметры](#параметры)
@@ -153,14 +153,14 @@
 
 ---
 
-## Добавление квеста в **Text Quest Reader**
+## Добавление квеста в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader)
 
-Вы можете использовать свой квест в Unity-проекте [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader):
+Вы можете использовать свой квест в Unity-проекте [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader):
 
 1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
 2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`
 3. Скопируйте папку квеста
-4. Откройте проект **Text Quest Reader** в Unity
+4. Откройте проект [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) в Unity
 5. Вставьте папку квеста по пути:
    `Assets/StreamingAssets/Quests/`
 6. Нажмите кнопку **Run** — квест появится в списке доступных
@@ -178,7 +178,7 @@
 
 Эти папки и quest.json создаются автоматически при создании квеста 
 
-После добавления квеста в Text Quest Reader, структура должна получиться такая в Unity:
+После добавления квеста в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader), структура должна получиться такая в Unity:
 
 <img src="docs/quest_structure.webp" width="280">
 
@@ -300,7 +300,7 @@
 1. Нажмите кнопку <img src="docs/btn_params.webp" width="30">
 2. Перейдите во вкладку **Quest settings**
 
-Здесь настраиваются параметры квеста, отображаемые в **Text Quest Reader** при его выборе:
+Здесь настраиваются параметры квеста, отображаемые в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) при его выборе:
 
 1. Display Name  
 2. Start Music  
