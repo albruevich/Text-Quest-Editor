@@ -148,9 +148,9 @@
 
 ---
 
-## Добавление квеста в [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader)
+## Добавление квеста в **Text Quest Reader**
 
-Вы можете использовать свой квест в Unity-проекте **Text Quest Reader**:
+Вы можете использовать свой квест в Unity-проекте [Text Quest Reader](https://github.com/albruevich/Text-Quest-Reader):
 
 1. Нажмите кнопку сохранения квеста <img src="docs/btn_save.webp" width="30">
 2. Нажмите кнопку **Open folder** — откроется папка `Quests/YourQuest`
