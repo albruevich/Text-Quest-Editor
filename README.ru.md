@@ -5,6 +5,8 @@
 ![Engine](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
+![Web](https://img.shields.io/badge/web-supported-2ea44f)
+![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8)
 
 🛠 **Text Quest Editor** — инструмент для создания нарративных квестов и интерактивных историй, вдохновлённых механиками игр типа «Космические рейнджеры».
 
