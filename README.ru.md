@@ -50,32 +50,26 @@
 
 Экосистема включает:
 
-- 🛠 **Text Quest Editor** — данный редактор нарративных квестов и интерактивных историй.
-- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source runtime для Unity-проектов.
-- [**Quest Reader Web**](https://questreader.onrender.com) — браузерный ридер для компьютеров и мобильных устройств.
+- 🛠 **Text Quest Editor** — редактор нарративных квестов и интерактивных историй.
+- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — Unity-приложение с открытым кодом.
+- [**Quest Reader Web**](https://questreader.onrender.com) — браузерную версию ридера.
 
-Все компоненты используют единый JSON-формат квестов, благодаря чему один и тот же квест можно:
-- создавать в редакторе,
-- публиковать на сервере,
-- запускать через Unity runtime,
-- запускать через браузер.
+Все компоненты используют единый JSON-формат квестов, благодаря чему один и тот же квест можно создавать, публиковать и запускать на разных платформах.
 
 ---
 
-## Open-source Runtime
+## Text Quest Reader
 
-[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) предоставляет open-source runtime для Unity, который позволяет:
-- использовать систему квестов в собственных проектах,
-- настраивать интерфейс и поведение под свои задачи,
-- запускать квесты через готовое desktop-приложение для Windows и macOS.
+[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) позволяет:
+- запускать квесты через готовое desktop-приложение,
+- интегрировать систему в Unity-проекты,
+- настраивать интерфейс и поведение под свои задачи.
 
 ---
 
 ## Web Reader
 
-[**Quest Reader Web**](https://questreader.onrender.com) — отдельное браузерное приложение для запуска интерактивных квестов.
-
-Поддерживает:
+[**Quest Reader Web**](https://questreader.onrender.com) позволяет запускать квесты прямо в браузере и поддерживает:
 - локальные и удалённые квесты,
 - компьютеры и мобильные устройства,
 - установку как PWA-приложения.
