@@ -50,7 +50,7 @@
 
 Экосистема включает:
 
-- 🛠 **Text Quest Editor** — редактор нарративных квестов и интерактивных историй.
+- 🛠 **Text Quest Editor** — данный редактор нарративных квестов и интерактивных историй.
 - [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source runtime для Unity-проектов.
 - [**Quest Reader Web**](https://questreader.onrender.com) — браузерный ридер для компьютеров и мобильных устройств.
 
