@@ -58,18 +58,18 @@
 
 ---
 
-## Text Quest Reader
+## [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader)
 
-[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) позволяет:
+Позволяет:
 - запускать квесты через готовое desktop-приложение,
 - интегрировать систему в Unity-проекты,
 - настраивать интерфейс и поведение под свои задачи.
 
 ---
 
-## Web Reader
+## [**Quest Reader Web**](https://questreader.onrender.com)
 
-[**Quest Reader Web**](https://questreader.onrender.com) позволяет запускать квесты прямо в браузере и поддерживает:
+Позволяет запускать квесты прямо в браузере и поддерживает:
 - локальные и удалённые квесты,
 - компьютеры и мобильные устройства,
 - установку как PWA-приложения.
