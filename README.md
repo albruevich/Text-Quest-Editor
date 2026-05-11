@@ -5,53 +5,78 @@
 ![Engine](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
+![Web](https://img.shields.io/badge/web-supported-2ea44f)
+![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8)
 
-🛠 **Text Quest Editor** allows you to create and use text quests inspired by the mechanics of games like “Space Rangers”.
+🛠 **Text Quest Editor** is a tool for creating narrative quests and interactive stories inspired by games like *Space Rangers*.
+
+The editor allows you to:
+- create non-linear scenarios,
+- use parameters, locations, transitions, and formulas,
+- add images, music, and sounds,
+- test quests directly inside the editor,
+- publish quests remotely through a server.
 
 The editor is distributed as ready-to-use builds for Windows and macOS.
-
-The project consists of two parts:
-- 🛠 **Text Quest Editor** — a tool for creating and testing quests,
-- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — an open-source Unity runtime for launching and integrating quests into your own projects.
-
-Quests can be:
-- launched directly in 🛠 **Text Quest Editor** for testing,
-- connected to the Unity project [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader),
-- published to the server, after which they will become available in [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
-
-[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) allows you to:
-- see and understand how a quest works,
-- use its code in your own projects,
-- customize the UI for your needs.
-
-Quests are created and stored in JSON format, which makes the combination of 🛠 **Text Quest Editor** and [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) a universal solution for using text quests in any projects.
 
 ---
 
 ## Contents
 
-- [Quick start](#quick-start)
+- [Text Quest Ecosystem](#text-quest-ecosystem)
+- [Text Quest Reader](#text-quest-reader)
+- [Quest Reader Web](#quest-reader-web)
+- [Quick Start](#quick-start)
 - [Ready Builds](#ready-builds)
-- [Creating a new quest](#creating-a-new-quest)
-- [Loading a quest](#loading-a-quest)
-- [Local and remote quests](#local-and-remote-quests)
-- [Local quest saving](#local-quest-saving)
-- [Example quests](#example-quests)
-- [Adding a quest to Text Quest Reader](#adding-a-quest-to-text-quest-reader)
-- [Quest structure](#quest-structure)
-- [Main idea](#main-idea)
+- [Creating a New Quest](#creating-a-new-quest)
+- [Loading a Quest](#loading-a-quest)
+- [Local and Remote Quests](#local-and-remote-quests)
+- [Local Quest Saving](#local-quest-saving)
+- [Quest Examples](#quest-examples)
+- [Adding a Quest to Text Quest Reader](#adding-a-quest-to-text-quest-reader)
+- [Quest Structure](#quest-structure)
+- [Core Idea](#core-idea)
 - [Parameters](#parameters)
-- [Main quest settings](#main-quest-settings)
+- [Main Quest Settings](#main-quest-settings)
 - [Modes](#modes)
-- [Locations](#locations)
+- [Locations](#editing-locations)
 - [Transitions](#transitions)
-- [Working with resources](#working-with-resources)
-- [Game mode](#game-mode)
+- [Working with Resources](#working-with-resources)
+- [Game Mode](#game-mode)
 - [Miscellaneous](#miscellaneous)
 - [Tips](#tips)
 
 ---
 
+## Text Quest Ecosystem
+
+The ecosystem includes:
+
+- 🛠 **Text Quest Editor** — the editor for narrative quests and interactive stories.
+- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — an open-source Unity application.
+- [**Quest Reader Web**](https://questreader.onrender.com) — the browser version of the reader.
+
+All components use a unified JSON quest format, allowing the same quest to be created, published, and launched across different platforms.
+
+---
+
+## [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader)
+
+Allows you to:
+- launch quests through a ready-to-use desktop application,
+- integrate the system into Unity projects,
+- customize the interface and behavior for your own needs.
+
+---
+
+## [**Quest Reader Web**](https://questreader.onrender.com)
+
+Allows you to launch quests directly in the browser and supports:
+- quests published on the server,
+- desktop and mobile devices,
+- installation as a PWA application.
+
+---
 
 ## Quick start
 
