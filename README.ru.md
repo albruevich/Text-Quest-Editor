@@ -22,7 +22,7 @@
 ## Содержание
 
 - [Экосистема Text Quest](#экосистема-text-quest)
-- [Open-source Runtime](#open-source-runtime)
+- [Text Quest Reader](#text-quest-reader)
 - [Web Reader](#web-reader)
 - [Быстрый старт](#быстрый-старт)
 - [Готовые сборки](#готовые-сборки)
