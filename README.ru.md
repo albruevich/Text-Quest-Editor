@@ -23,7 +23,7 @@
 
 - [Экосистема Text Quest](#экосистема-text-quest)
 - [Text Quest Reader](#text-quest-reader)
-- [Web Reader](#web-reader)
+- [Quest Reader Web](#quest-reader-web)
 - [Быстрый старт](#быстрый-старт)
 - [Готовые сборки](#готовые-сборки)
 - [Создание нового квеста](#создание-нового-квеста)
