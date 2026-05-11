@@ -5,31 +5,27 @@
 ![Engine](https://img.shields.io/badge/engine-Unity-000000?logo=unity&logoColor=white)
 ![Language](https://img.shields.io/badge/language-C%23-blue)
 ![Format](https://img.shields.io/badge/data-JSON-orange)
+![Web](https://img.shields.io/badge/web-supported-2ea44f)
+![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8)
 
-🛠 **Text Quest Editor** дозволяє створювати та використовувати текстові квести, натхненні механіками ігор типу «Космічні рейнджери».
+🛠 **Text Quest Editor** — інструмент для створення наративних квестів та інтерактивних історій, натхненних механіками ігор на кшталт «Космічних рейнджерів».
 
-Редактор розповсюджується у вигляді готових збірок для платформ Windows та macOS.
+Редактор дозволяє:
+- створювати нелінійні сценарії,
+- використовувати параметри, локації, переходи та формули,
+- підключати зображення, музику та звуки,
+- тестувати квести безпосередньо в редакторі,
+- публікувати квести віддалено через сервер.
 
-Проєкт складається з двох частин:
-- 🛠 **Text Quest Editor** — інструмент для створення та тестування квестів,
-- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — open-source Unity runtime для запуску та інтеграції квестів у власні проєкти.
-
-Квести можна:
-- запускати прямо в 🛠 **Text Quest Editor** для тестування,
-- підключати до Unity-проєкту [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader),
-- публікувати на сервері, після чого вони стануть доступними в [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader).
-
-[**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) дозволяє:
-- бачити та розуміти, як працює квест,
-- використовувати його код у власних проєктах,
-- налаштовувати UI під свої задачі.
-
-Квести створюються та зберігаються у форматі JSON, що робить зв’язку 🛠 **Text Quest Editor** та [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) універсальним рішенням для використання текстових квестів у будь-яких проєктах.
+Редактор поширюється у вигляді готових збірок для Windows та macOS.
 
 ---
 
 ## Зміст
 
+- [Екосистема Text Quest](#екосистема-text-quest)
+- [Text Quest Reader](#text-quest-reader)
+- [Quest Reader Web](#quest-reader-web)
 - [Швидкий старт](#швидкий-старт)
 - [Готові збірки](#готові-збірки)
 - [Створення нового квесту](#створення-нового-квесту)
@@ -49,6 +45,36 @@
 - [Ігровий режим](#ігровий-режим)
 - [Різне](#різне)
 - [Поради](#поради)
+
+---
+
+## Екосистема Text Quest
+
+Екосистема включає:
+
+- 🛠 **Text Quest Editor** — редактор наративних квестів та інтерактивних історій.
+- [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader) — Unity-застосунок з відкритим кодом.
+- [**Quest Reader Web**](https://questreader.onrender.com) — браузерну версію рідера.
+
+Усі компоненти використовують єдиний JSON-формат квестів, завдяки чому один і той самий квест можна створювати, публікувати та запускати на різних платформах.
+
+---
+
+## [**Text Quest Reader**](https://github.com/albruevich/Text-Quest-Reader)
+
+Дозволяє:
+- запускати квести через готовий desktop-застосунок,
+- інтегрувати систему в Unity-проєкти,
+- налаштовувати інтерфейс та поведінку під власні потреби.
+
+---
+
+## [**Quest Reader Web**](https://questreader.onrender.com)
+
+Дозволяє запускати квести прямо у браузері та підтримує:
+- квести, опубліковані на сервері,
+- комп’ютери та мобільні пристрої,
+- встановлення як PWA-застосунку.
 
 ---
 
